@@ -1,4 +1,4 @@
-### 18th June 2025 | 12:00 AM to 2:00 AM
+### 18th June 2025 | 12:00 PM to 2:00 PM
 
 # Lecture 2
 

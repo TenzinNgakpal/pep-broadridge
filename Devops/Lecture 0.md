@@ -1,5 +1,5 @@
 
-### 16th June 2025 | 12:00 AM to 2:00 AM
+### 16th June 2025 | 12:00 PM to 2:00 PM
 
 # Lecture 0
 
