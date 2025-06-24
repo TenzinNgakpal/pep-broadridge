@@ -30,3 +30,25 @@
     1. Create a Dockerfile
     2. Use the Dockerfile to create a container image.
     3. Use the container image to create a running container.
+
+
+- Image Layers:
+    * Images are built using instructions in a Dockerfile.
+    * Each Docker instruction creates a new read-only layer.
+    * A writeable layer is added when an image is run in a container.
+
+- Dockerfile Commands:
+1. FROM
+2. RUN
+3. ENV
+4. ADD or COPY
+5. CMD
+
+- Container Orchestration:
+    * Container orchestration is a process that automates the container lifecycle of containerized applications.
+    * Container Lifecycle:
+        1. Deployment
+        2. Management
+        3. Scaling
+        4. Networking
+        5. Availabilty
