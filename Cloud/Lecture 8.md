@@ -11,7 +11,9 @@
     4. Terraform Highlights
     5. Terraform Providers
 
+
 - **Infrastructure as a Code (IaC)**
+    
     * Infrastructure Management - *Traditional Way*
         - Traditionally infrastructure was configured manually.
         - Scripts (Platform Specific)
@@ -59,7 +61,6 @@
             5. Not repeatable
             6. Requires complex logic
             7. Changes to destination requires significant modifications
-
         - Declarative:
             1. Starting point does not matter
             2. Engine determines how to get to destination
@@ -85,7 +86,7 @@
     
     * Uses HashiCorp Configuration Language (HCL).
     
-    * How Does Terraform Work?
+    * **How Does Terraform Work?**
         + Terraform creates and manages resources on cloud platforms and other services through their Application Programming Interfaes (APIs).
         + Providers enable Terraform to work with virtually any platform or service with an accessible API.
         + Provider is a plugin that:
@@ -93,7 +94,7 @@
             - Understands API intractions of tht platform
             - Exposes resources available in it
 
-    * Terraform Language
+    * **Terraform Language**
         + Declarative Language
         + It serves the purpose of declaring a resource
         + Resources represent infrastructure objects
