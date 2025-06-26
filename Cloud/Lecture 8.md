@@ -87,14 +87,45 @@
     * Uses HashiCorp Configuration Language (HCL).
     
     * **How Does Terraform Work?**
-        + Terraform creates and manages resources on cloud platforms and other services through their Application Programming Interfaes (APIs).
+        + Terraform creates and manages resources on cloud platforms and other services through their **Application Programming Interfaes (APIs)**.
         + Providers enable Terraform to work with virtually any platform or service with an accessible API.
         + Provider is a plugin that:
             - Enables Terraform to interact with the target platform
             - Understands API intractions of tht platform
             - Exposes resources available in it
+        + The core Terraform workflow consists of three stages:
+            * Init: Terraform initializes the working directory, downloading the necessary provider plugins and setting up the backend for state management. It must be run before any other commands to prepare your configuration for use.
+            * Validate: Terraform checks the syntax and internal consistency of the configuration files, ensuring that they are structurally and logically correct before planning or applying changes.
+            1. Write: The user defines resources, which may be across multiple cloud providers and services.
+            2. Plan: Terraform creates an execution plan describing the infrastructure it will create, update, or destroy based on the existing infrastructure and your configuration.
+            3. Apply: On approval, Terraform performs the proposed operations in the correct order, respecting any resource dependencies.
+            * Destroy: Terraform removes all infrastructure defined in the configuration. It’s the reverse of *Apply* and is used when tearing down environments or cleaning up unused resources.
 
     * **Terraform Language**
         + Declarative Language
         + It serves the purpose of declaring a resource
         + Resources represent infrastructure objects
+        
+    * **Terraform Language Syntax**    
+        + Configuration Syntax:
+            - Describes the native grammar of the Terraform language.
+            - Based on HashiCorp's proprietary HCL (HashiCorp Configuration Language).
+            - Easy for humans to read and write.
+        + JSON Configuration Syntax:
+            - Describes how to represent Terraform language constructs in JSON Format
+            - Harder for humans to read and edit
+            - Easier to generte and parse programmatically
+        + Terraform Laguage Key Constructs:
+            - Built around two key syntax constructs: *Arguments* and *Blocks*.
+            - **Arguments:**
+                * An argument assigns a value to a particular name.
+                * The identifier before the equals sign is the *argument name*.
+                * The expression after the equals sign is the *argument's value*.
+                * Arguments are typically used inside blocks to define resource-specific settings.
+            - **Blocks:**
+                * A block is a container for other content.
+                * A block starts with a keyword that represents its type (What the block defines).
+                * Block type defines how many labels must follow the type keyword.
+                    + Some block types require one label (e.g., provider "aws").
+                    + Others require two labels (e.g., resource "aws_instance" "web" — where aws_instance is the type and web is the name).
+                    + Some blocks support nested blocks (e.g., provisioner or lifecycle inside a resource block).
