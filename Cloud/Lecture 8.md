@@ -6,10 +6,13 @@
 
 - **Contents**
     1. Introduction to Infrastructure as a Code (IaC)
-    2. Features of Infrastructure as a Code
+    2. Features of Infrastructure as a Code (IaC)
     3. Introduction to Terraform
     4. Terraform Highlights
     5. Terraform Providers
+        1. Providers
+        2. Configuration Syntaxes
+        3. Modules
 
 
 - **Infrastructure as a Code (IaC)**
@@ -28,7 +31,9 @@
     * Infrastructure Management - *Through Code (IaC)*
         - Above challenges can be addressed through IaC.
         - IaC allows us to conffigure infrastructure rogrammatically through code.
-        - **Definition:** IaC is a process of provisioning, managing, and configuring various resources in computer infrastructure through machine-readable configuration files, rather than through physical hardware configuration or interactive configuration tools.
+        - **Definition:** "*IaC is a process of provisioning, managing, and configuring various resources in computer data centers through machine readable code rather than manual configuration.*"
+        - Allows for automation of the creation and modification of the infrastructure.
+        - Can be *Imperative* or *Declarative*.
         - **Features of IaC:**
             + Codify infreastructure provisioning
             + Version control infrastructure
@@ -129,3 +134,6 @@
                     + Some block types require one label (e.g., provider "aws").
                     + Others require two labels (e.g., resource "aws_instance" "web" — where aws_instance is the type and web is the name).
                     + Some blocks support nested blocks (e.g., provisioner or lifecycle inside a resource block).
+                * Block Body:
+                    + Starts with a "{" after the labels (if any labels exist)
+                    + Ends with "}"
