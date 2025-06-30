@@ -30,6 +30,10 @@
         7. Local Variables
         8. State File
 
+    * Providers:
+        + Example: AWS.
+        + Provides services and platforms.
+
     * Resource Blocks:
         + Resource is a component of infrasturcture.
         + Example: A virtual machine, a database, a network component, etc.
