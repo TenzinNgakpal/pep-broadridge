@@ -66,23 +66,12 @@
         + Attributes exported by data source blocks can be 
 
     * Modules:
-        + A module is a container for multuple resources that are used together.
-        + Every Terraform configuration has at least one module:
-            - Root Module
-            - It consists of the resources defined in the .tf files in the main working directory.
-        + A module can call other modules.
-            - Called module is referred to as child module.
-            - Module from which child module is called, is referred to as calling module.
-            - Child module's resources become part of configuration of calling module.
-        + A module can be called multiple times.
-            - Either within the same configuration.
-            - Each instance of a module can be configured with different input values.
-        + Modules improve reusability, organization, and maintainability of Terraform code.
+        + A module is a container for mu, organization, and maintainability of Terraform code.
         + There are three types of modules:
             - **Root Module** – The primary module loaded from the current working directory.
             - **Local Modules** – Modules stored locally within the same project directory.
             - **Remote Modules** – Modules sourced from external sources like Terraform Registry, GitHub, or a file system path.
-        + Modules use the `module` block to call child modules:
+        + M the `module` block to call child modules:
             ```hcl
             module "web_ec2" {
             source = "./modules/aws_ec2"
@@ -166,4 +155,3 @@
             - `terraform state list` – view managed resources
             - `terraform state show` – inspect resource state
             - `terraform state rm` – remove a resource from the state
-

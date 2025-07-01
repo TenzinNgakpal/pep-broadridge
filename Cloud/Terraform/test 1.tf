@@ -4,12 +4,11 @@ provider "aws" {
     secret_key = ""
 }
 
-resource "aws_instance" "first" {
-    ami = "ami-09e6f87a47903347c"
-    instance = "t2.micro"
 
-    tags = {
-        Name = "Ubuntu"
-        Environment = "Production"
-    }
+resource "aws_instance" "web" {
+  ami           = "ami-0fc5d935ebf8bc3bc"  # Ubuntu Image
+  instance_type = "t2.micro"
+  tags = {
+    Name = "Ubuntu"
+  }
 }
