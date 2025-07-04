@@ -21,3 +21,7 @@
     * Configure:
         + Number of executors
         + Remote root directory
+        + Labels (Optional)
+        + Usage (Only build jobs with label expression)
+        + Launch method: *e.g., Launch agent by connecting to the controller*
+    * Save and Launch.
