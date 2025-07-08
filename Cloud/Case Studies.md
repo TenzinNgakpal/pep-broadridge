@@ -35,8 +35,3 @@
         * Load Balancer: Application Load Balancer (ALB) with 1 million requests per month.
         * Data Transfer Out: 100 GB/month
         * Uptime: 24/7 Operation
-    
-    - Tasks:
-        * Add each service to AWS Pricing Calculator with given specifications.
-        * Estimate total cost and identify the most expensive service.
-        * Suggest ways to optimize costs (e.g., reducin Lambda memory or using caching).
