@@ -35,7 +35,7 @@
     
     * Configuration: Resources that Kubernetes provides for configuring Pods.
     
-    * Security: Security for cloud-native 
+    * Security: Security for cloud-native workloads enforces security for Pods and API access.
     
     * Policies: Create policies for groups of resources helps ensure that Pods match to the Nodes so that the kubelet can find them and run the pod.
     
