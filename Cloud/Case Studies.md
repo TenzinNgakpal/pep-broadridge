@@ -35,3 +35,4 @@
         * Load Balancer: Application Load Balancer (ALB) with 1 million requests per month.
         * Data Transfer Out: 100 GB/month
         * Uptime: 24/7 Operation
+        
